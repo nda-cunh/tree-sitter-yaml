@@ -1,0 +1,12 @@
+option('yaml_schema',
+  type: 'combo',
+  choices: ['core', 'json', 'legacy'],
+  value: 'core',
+  description: 'Select the YAML schema to use. Options are "core", "json", or "legacy".'
+)
+
+option('tree_sitter_abi',
+  type: 'integer',
+  value: 14,
+  description: 'Specify the ABI version for the generated parser'
+)
